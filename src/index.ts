@@ -8,6 +8,7 @@ client.once('ready', () => {
 });
 
 client.on('message', (msg: Message) => {
+  console.log("got msg from client: ", msg);
   if (msg.content === 'ping') {
     msg.reply('Pong 🏓');
   } else if (msg.content === 'hello') {
